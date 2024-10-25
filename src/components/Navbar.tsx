@@ -6,7 +6,7 @@ import { icons } from './icons'
 const Navbar = () => {
   return (
     <div  className='bg-white sticky z-50 top-0 inset-x-0 h-16'>
-        <header className='relative bg-white'>
+        <header className='relative bg-gray-300'>
             <MaxwidthWrapper>
                 <div className='border-b border-gray-200'>
                     <div className='flex h-16 items-center'>
@@ -21,6 +21,7 @@ const Navbar = () => {
                             </Link>
                             
                         </div>
+                        <div className='hidden z-50 lg:ml-8 lg:block lg:self-stretch'></div>
                     </div>
                 </div>
             </MaxwidthWrapper>
