@@ -4,7 +4,6 @@ import Link from "next/link";
 import { icons } from "./icons";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
-import { Span } from "next/dist/trace";
 import Cart from "./Cart";
 
 const Navbar = () => {
