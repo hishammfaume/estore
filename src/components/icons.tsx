@@ -87,10 +87,10 @@ export const icons = {
       viewBox="0 0 24 24"
       fill="none"
       stroke="#0055ff"
-      stroke-width="1.35"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="lucide lucide-rabbit"
+      strokeWidth="1.35"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-rabbit"
     >
       <path d="M13 16a3 3 0 0 1 2.24 5" />
       <path d="M18 12h.01" />
