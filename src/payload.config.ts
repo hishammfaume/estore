@@ -15,13 +15,11 @@ export default buildConfig({
         meta: {
             titleSuffix: " -Bunny",
             favicon: "/favicon.ico",
-            ogImage: '/thumbnail.jpg'
-        }
+            ogImage: '/thumbnail.jpg',
+        },
     },
-    rateLimit : {
-        max: 2000,
-
-
+    rateLimit: {
+        max: 2000
     },
     editor: slateEditor({}),
     db: mongooseAdapter({

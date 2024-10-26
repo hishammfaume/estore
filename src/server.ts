@@ -6,7 +6,7 @@ const app = express() // Create an instance of an Express application
 const PORT = Number(process.env.PORT) || 3000 // Set the port to the value from the environment variable PORT or default to 3000
 
 const start = async () => { // Define an asynchronous function named start
-    const payload = await getPayloadClient({ // Await the result of getPayloadClient function call
+     await getPayloadClient({ // Await the result of getPayloadClient function call
         initOptions: { // Pass initialization options to the getPayloadClient function
             express: app, // Pass the Express application instance
             onInit: async (cms) => { // Define an asynchronous onInit callback function
@@ -18,12 +18,12 @@ const start = async () => { // Define an asynchronous function named start
     app.use((req, res) => nextHandler(req, res)) // Use the nextHandler function to handle all incoming requests
 
     nextApp.prepare().then(() => {
-        payload.logger.info("next.js started")
+        //payload.logger.info("next.js started")
 
         app.listen(PORT, async () => {
-            payload.logger.info(
-                `Next.js app url: ${process.env.NEXT_PUBLIC_SERVER_URL}`
-            )
+           // payload.logger.info(
+             //  `Next.js app url: ${process.env.NEXT_PUBLIC_SERVER_URL}`
+           // )
         })
     })
 }
