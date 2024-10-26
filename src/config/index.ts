@@ -27,17 +27,17 @@ export const PRODUCT_CATEGORIES = [
             {
                 name: "Editor picks",
                 href: "#",
-                imageSrc: '/nav/clothes/jacket.png'
+                imageSrc: '/nav/clothes/jacket.jpg'
             },
             {
                 name: "New Arrivals",
                 href: "#",
-                imageSrc: '/nav/clothes/sweater.png'
+                imageSrc: '/nav/clothes/sweater.jpg'
             },
             {
                 name: "Most popular",
                 href: "#",
-                imageSrc: '/nav/clothes/trsck.png'
+                imageSrc: '/nav/clothes/trsck.jpg'
             }
         ]
     }
