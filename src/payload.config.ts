@@ -5,10 +5,10 @@ import {slateEditor} from "@payloadcms/richtext-slate";
 import path from "path";
 
 export default buildConfig({
-    serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
+    serverURL: process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000',
     collections: [],
     routes: {
-        admin: '/sell'
+        admin: '/admin'
     },
     admin: {
         bundler: webpackBundler(),
@@ -17,6 +17,7 @@ export default buildConfig({
             favicon: "/favicon.ico",
             ogImage: '/thumbnail.jpg',
         },
+      
     },
     rateLimit: {
         max: 2000
