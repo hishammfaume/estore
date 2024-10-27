@@ -5,7 +5,7 @@ import {slateEditor} from "@payloadcms/richtext-slate";
 import path from "path";
 
 export default buildConfig({
-    serverURL: process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000',
+    serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
     collections: [],
     routes: {
         admin: '/admin'
