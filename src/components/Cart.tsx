@@ -70,7 +70,7 @@ const Cart = () => {
         ) : (
           <div className="flex h-full flex-col items-center justify-center spece-y-1">
             <div aria-hidden='true' className="relative mb-4 h-60 w-60 text-muted-foreground ">
-                <Image src='/nav/cartgif.gif'  fill alt="empty shopping cart"/>
+                <Image unoptimized src='/nav/cartgif.gif'  fill alt="empty shopping cart"/>
             </div>
             <div className="text-xl font-semibold"> Your cart is empty</div>
             <SheetTrigger asChild>

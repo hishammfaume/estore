@@ -1,9 +1,18 @@
 import express from "express" // Import the express module
 import { getPayloadClient } from "./get-payload" // Import the getPayloadClient function from the get-payload module
 import { nextApp, nextHandler } from "./next-utils" // Import the nextHandler function from the next-utils module
+import * as trpcExpress from '@trpc/server/adapters/express'
+import { appRouter } from "./trpc"
+
+
 
 const app = express() // Create an instance of an Express application
 const PORT = Number(process.env.PORT) || 3000 // Set the port to the value from the environment variable PORT or default to 3000
+const createContext = ({req, res}: trpcExpress.CreateExpressContextOptions ) => ({
+    req,res
+
+})
+
 
 const start = async () => { // Define an asynchronous function named start
      await getPayloadClient({ // Await the result of getPayloadClient function call
@@ -13,7 +22,12 @@ const start = async () => { // Define an asynchronous function named start
                 cms.logger.info(`Admin URL ${cms.getAdminURL}`) // Log the admin URL using the CMS logger
             },
         },
-    })
+    });
+
+    app.use('/api/trpc', trpcExpress.createExpressMiddleware({
+        router: appRouter,
+        createContext
+    }))
 
     app.use((req, res) => nextHandler(req, res)) // Use the nextHandler function to handle all incoming requests
 
