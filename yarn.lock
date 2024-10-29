@@ -2148,11 +2148,6 @@
   resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.36.1.tgz#79f8c1a539d47c83104210be2388813a7af2e524"
   integrity sha512-DJSilV5+ytBP1FbFcEJovv4rnnm/CokuVvrBEtW/Va9DvuJ3HksbXUJEpI0aV1KtuL4ZoO9AVE6PyNLzF7tLeA==
 
-"@tanstack/query-core@5.59.16":
-  version "5.59.16"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.59.16.tgz#aa4616e8a9c12afeef4cfbf3ed0f55f404d66e67"
-  integrity sha512-crHn+G3ltqb5JG0oUv6q+PMz1m1YkjpASrXTU+sYWW9pLk0t2GybUHNRqYPZWhxgjPaVGC4yp92gSFEJgYEsPw==
-
 "@tanstack/react-query@4.36.1":
   version "4.36.1"
   resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.36.1.tgz#acb589fab4085060e2e78013164868c9c785e5d2"
@@ -2160,13 +2155,6 @@
   dependencies:
     "@tanstack/query-core" "4.36.1"
     use-sync-external-store "^1.2.0"
-
-"@tanstack/react-query@^5.59.16":
-  version "5.59.16"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.59.16.tgz#1e701c6e6681965c04aa426df9da54b8edc6db1b"
-  integrity sha512-MuyWheG47h6ERd4PKQ6V8gDyBu3ThNG22e1fRVwvq6ap3EqsFhyuxCAwhNP/03m/mLg+DAb0upgbPaX6VB+CkQ==
-  dependencies:
-    "@tanstack/query-core" "5.59.16"
 
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
@@ -2301,6 +2289,13 @@
   integrity sha512-j2VlPv1NnwPJbaCNv69FO/1z4lId0QmGvpT41YxitRtWlg96g/j8qcv2RKsLKe2F6OJgyXhupN1Xo17b2m139Q==
   dependencies:
     undici-types "~6.19.2"
+
+"@types/nodemailer@^6.4.16":
+  version "6.4.16"
+  resolved "https://registry.yarnpkg.com/@types/nodemailer/-/nodemailer-6.4.16.tgz#db006abcb1e1c8e6ea2fb53b27fefec3c03eaa6c"
+  integrity sha512-uz6hN6Pp0upXMcilM61CoKyjT7sskBoOWpptkjjJp8jIMlTdc3xG01U7proKkXzruMS4hS0zqtHNkNPFB20rKQ==
+  dependencies:
+    "@types/node" "*"
 
 "@types/parse-json@^4.0.0":
   version "4.0.2"
@@ -4298,7 +4293,7 @@ esrecurse@^4.3.0:
     "@radix-ui/react-label" "^2.1.0"
     "@radix-ui/react-separator" "^1.1.0"
     "@radix-ui/react-slot" "^1.1.0"
-    "@tanstack/react-query" "^5.59.16"
+    "@tanstack/react-query" "4.36.1"
     "@trpc/client" "^10.45.2"
     "@trpc/next" "^10.45.2"
     "@trpc/react-query" "^10.45.2"
@@ -4307,11 +4302,12 @@ esrecurse@^4.3.0:
     clsx "^2.1.1"
     cross-env "^7.0.3"
     dotenv "^16.4.5"
-    estore "file:../Library/Caches/Yarn/v6/npm-estore-0.1.0-24b06268-b8c8-4014-841d-b062cfb85765-1730039979281/node_modules/estore"
+    estore "file:../Library/Caches/Yarn/v6/npm-estore-0.1.0-95514f4e-51d0-46cb-a0a0-f515fad7f37b-1730218309946/node_modules/estore"
     express "^4.21.1"
     lucide-react "^0.453.0"
     mongodb "^6.10.0"
     next "15.0.1"
+    nodemailer "^6.9.16"
     payload "^2.30.3"
     punycode "^2.3.1"
     react "^18.3.1"
@@ -6292,6 +6288,11 @@ nodemailer@6.9.15:
   version "6.9.15"
   resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.15.tgz#57b79dc522be27e0e47ac16cc860aa0673e62e04"
   integrity sha512-AHf04ySLC6CIfuRtRiEYtGEXgRfa6INgWGluDhnxTZhHSKvrBu7lc1VVchQ0d8nPc4cFaZoPq8vkyNoZr0TpGQ==
+
+nodemailer@^6.9.16:
+  version "6.9.16"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.16.tgz#3ebdf6c6f477c571c0facb0727b33892635e0b8b"
+  integrity sha512-psAuZdTIRN08HKVd/E8ObdV6NO7NTBY3KsC30F7M4H1OnmLCUNaS56FpYxyb26zWLSyYF9Ozch9KYHhHegsiOQ==
 
 nodemon@^3.1.7:
   version "3.1.7"
